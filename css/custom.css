@@ -1,0 +1,397 @@
+@font-face {
+  font-family: Basetica;
+  src: url("../fonts/Basetica-Med.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url(/img/bg2.jpg);
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+.container {
+  max-width: 960px;
+}
+
+@keyframes logo-animated {
+  0% {
+    -webkit-transform: rotate(-165deg);
+    transform: rotate(-165deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-165deg);
+    transform: rotate(-165deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-160deg);
+    transform: rotate(-160deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(-170deg);
+    transform: rotate(-170deg);
+  }
+
+  35% {
+    -webkit-transform: rotate(-155deg);
+    transform: rotate(-155deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-195deg);
+    transform: rotate(-195deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+.logoanimated {
+  -webkit-animation: logo-animated 2.2s ease-out both;
+  animation: logo-animated 2.2s ease-out both;
+}
+
+.logo {
+  max-width: 80%;
+  margin-right: 5px;
+}
+
+.gradient {
+  /*
+  background: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 233, 77, 0.8) 0%,
+    rgba(255, 156, 146, 0.8) 20%,
+    rgba(205, 113, 194, 0.8) 40%,
+    rgba(90, 157, 237, 0.8) 60%,
+    rgba(83, 211, 224, 0.8) 80%,
+    rgba(136, 216, 72, 0.8) 100%
+  );
+  
+
+ 
+
+  background: linear-gradient(45deg,
+      rgba(255, 233, 77, 0.8) 0%,
+      rgba(255, 156, 146, 0.8) 20%,
+      rgba(205, 113, 194, 0.8) 40%,
+      rgba(90, 157, 237, 0.8) 60%,
+      rgba(83, 211, 224, 0.8) 80%,
+      rgba(136, 216, 72, 0.8) 100%);
+  background-size: 400% 400%;
+  animation: gradientSize 8s ease infinite;
+
+
+  background: #000;
+  background-image: linear-gradient(
+    115deg,
+    rgba(205, 113, 194, 1) 0%,
+    rgba(205, 113, 194, 0.5) 100%
+    );
+
+     background-image: linear-gradient(90deg, #8e24aa, #d81b60);
+     */
+
+  background-image: linear-gradient(90deg, #8e24aa, #d81b60);
+}
+
+.bgHeader {
+  background-image: url("../img/bg4.jpg"); 
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgFooter {
+  background-image: linear-gradient(90deg, #8e24aa, #d81b60);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes gradientSize {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.round-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.btn-success {
+  background: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, #00796b 0%, #26a69a 50%, #00796b 100%);
+  border: 0;
+  color: #ffffff !important;
+  transition: background-position 0.5s;
+  background-size: 200% auto;
+}
+
+.btn-success:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+}
+
+.btn-light {
+  color: #00796b !important;
+
+}
+
+
+h1,
+h2 {
+  font-family: "Basetica", Roboto;
+  color: #455a64;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #607d8b;
+  margin-bottom: 0;
+}
+
+/* 
+  OVERLAY 
+*/
+
+/* 
+  IMAGE HOVER 
+*/
+
+/* 
+  DROPDOWN 
+*/
+
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
+
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+/*
+  Gradient Titles
+*/
+
+.display-4 {
+  background-image: linear-gradient(90deg, #8e24aa, #d81b60);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+
+
+/* Ethereum Spinner */
+
+/*
+  Colors of Ethereum diamond
+  red HEX #ff9c92 RGB (255,156,146)
+  yellow  HEX #ffe94d RGB (255,233,77)
+  green HEX #88d848 RGB (136,216,72)
+  purple HEX #ce71c3 RGB (206,113,195)
+  blue HEX #5a9ded RGB (90,157,237)
+  teal HEX #53d3e0 RGB (83,211,224)
+*/
+
+.eth {
+  margin: auto;
+  position: relative;
+  /*
+  position: absolute;
+  left: calc(50% - 10em / 2);
+  top: calc(50% - 4em);
+*/
+  width: 40px;
+  height: 150px;
+  font-size: 0.25em;
+}
+
+.eth .top,
+.eth .bottom {
+  width: 10em;
+  height: 10em;
+  background: rgba(255, 255, 255, .5);
+  transform: rotateX(65deg) rotateZ(45deg);
+  transform-style: preserve-3d;
+  position: absolute;
+  animation: rotate 10s linear infinite;
+}
+
+.eth .top .left,
+.eth .bottom .left,
+.eth .top .right,
+.eth .bottom .right,
+.eth .top .up,
+.eth .bottom .up,
+.eth .top .down,
+.eth .bottom .down {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.eth .top .left,
+.eth .bottom .left,
+.eth .top .right,
+.eth .bottom .right {
+  border-left: 5em solid transparent;
+  border-right: 5em solid transparent;
+  border-bottom: 15em solid rgba(255, 255, 255, .25);
+  transform-origin: bottom;
+}
+
+.eth .top .up,
+.eth .bottom .up,
+.eth .top .down,
+.eth .bottom .down {
+  transform-origin: bottom right;
+  border-top: 5em solid transparent;
+  border-right: 15em solid rgba(255, 255, 255, .1);
+  border-bottom: 5em solid transparent;
+  border-left: none;
+  top: 0em;
+}
+
+.eth .top .left,
+.eth .bottom .left {
+  left: 0;
+  top: -5em;
+  transform: rotateX(-70deg);
+}
+
+.eth .top .right,
+.eth .bottom .right {
+  transform: rotateX(-110deg);
+  left: 0em;
+  top: -15em;
+}
+
+.eth .top .up,
+.eth .bottom .up {
+  transform: rotateY(70deg);
+  left: -5em;
+}
+
+.eth .top .down,
+.eth .bottom .down {
+  transform: rotateY(110deg);
+  left: -15em;
+}
+
+.eth .top {
+  left: 0;
+  top: 0;
+}
+
+.eth .bottom {
+  left: 0;
+  top: 1.5em;
+  background: rgba(255, 255, 255, .5);
+}
+
+.eth .bottom .left,
+.eth .bottom .right {
+  border-bottom: 15em solid rgba(255, 255, 255, .25);
+}
+
+.eth .bottom .up,
+.eth .bottom .down {
+  border-right: 15em solid rgba(255, 255, 255, .1);
+}
+
+.eth .bottom .left {
+  transform: rotateX(70deg);
+}
+
+.eth .bottom .right {
+  transform: rotateX(110deg);
+}
+
+.eth .bottom .up {
+  transform: rotateY(-70deg);
+}
+
+.eth .bottom .down {
+  transform: rotateY(-110deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(65deg) rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateX(65deg) rotateZ(360deg);
+  }
+}
